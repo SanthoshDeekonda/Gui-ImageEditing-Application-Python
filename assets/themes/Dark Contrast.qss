@@ -1,0 +1,148 @@
+/* styles.qss */
+
+/* General Widget Style */
+QWidget {
+    background-color: #1e1e2f; /* Dark blue background */
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    color: #e0e0e0; /* Light gray text for contrast */
+}
+
+/* Menu Bar Style */
+QMenuBar {
+    background-color: #2a2a3c; /* Darker blue background */
+    color: #e0e0e0;
+    border-bottom: 1px solid #3c3c4c; /* Darker blue-gray border */
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 8px 16px;
+    margin: 0;
+}
+
+QMenuBar::item:selected {
+    background-color: #3a5ba0; /* Darker blue for selected item */
+    color: white;
+    border-radius: 4px;
+}
+
+/* Menu Style */
+QMenu {
+    background-color: #2a2a3c; /* Dark blue background */
+    color: #e0e0e0;
+    border: 1px solid #3c3c4c; /* Dark blue-gray border for the menu */
+    border-radius: 5px;
+}
+
+QMenu::item {
+    padding: 8px 16px;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #3a5ba0; /* Darker blue for active items */
+    color: white;
+}
+
+/* List Widget Style */
+QListWidget {
+    background-color: #292a3b; /* Dark background for the sidebar */
+    border: 1px solid #3c3c4c; /* Dark blue-gray border */
+    padding: 10px;
+    font-size: 14px;
+    color: #e0e0e0;
+    border-radius: 8px;
+}
+
+QListWidget::item {
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+}
+
+QListWidget::item:selected {
+    background-color: #3a5ba0; /* Dark blue for selected items */
+    color: white;
+}
+
+/* Button Style */
+QPushButton {
+    background-color: #3a5ba0; /* Darker blue for buttons */
+    color: #fff;
+    border: 1px solid #2a4781; /* Dark blue border */
+    padding: 12px 20px;
+    margin: 7px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #2a4781; /* Even darker blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #1e3c74; /* Darker blue when pressed */
+}
+
+/* Radio Button Style */
+QRadioButton {
+    font-size: 13px;
+    margin: 5px;
+    color: #e0e0e0;
+}
+
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #3a5ba0; /* Blue border for radio button indicator */
+    border-radius: 8px;
+    background: transparent;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #3a5ba0; /* Blue when checked */
+    border: 2px solid #3a5ba0;
+}
+
+/* Label Style */
+QLabel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e0e0e0; /* Light gray text */
+}
+
+/* Scrollbar Style */
+QScrollBar:vertical {
+    background: #292a3b;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #3c3c4c; /* Dark gray handle */
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #5a607b; /* Slightly lighter gray on hover */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+/* Footer Layout Buttons */
+QPushButton#increase, QPushButton#decrease {
+    background-color: #2a2a3c; /* Darker background for footer buttons */
+    border: 1px solid #3c3c4c; /* Dark blue-gray border */
+    color: #e0e0e0;
+}
+
+QPushButton#increase:hover, QPushButton#decrease:hover {
+    background-color: #3a5ba0; /* Blue on hover */
+    border-color: #3a5ba0;
+}

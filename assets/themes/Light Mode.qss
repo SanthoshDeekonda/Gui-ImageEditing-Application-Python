@@ -1,0 +1,146 @@
+/* styles.qss */
+
+/* General Widget Style */
+QWidget {
+    background-color: #f5f5f5; /* Light background */
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    color: #333; /* Dark text */
+}
+
+/* Menu Bar Style */
+QMenuBar {
+    background-color: #ffffff; /* White menu bar */
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 8px 16px;
+    margin: 0;
+}
+
+QMenuBar::item:selected {
+    background-color: #eaeaea; /* Hover effect */
+    border-radius: 4px;
+}
+
+/* Menu Style */
+QMenu {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+QMenu::item {
+    padding: 8px 16px;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #eaeaea; /* Selected item effect */
+}
+
+/* List Widget Style */
+QListWidget {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 8px;
+}
+
+QListWidget::item {
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 4px;
+}
+
+QListWidget::item:selected {
+    background-color: #eaeaea;
+    color: #000;
+}
+
+/* Button Style */
+QPushButton {
+    background-color: #0078d7; /* Modern blue */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #005fa3;
+}
+
+QPushButton:pressed {
+    background-color: #004e85;
+}
+
+/* Radio Button Style */
+QRadioButton {
+    font-size: 13px;
+    margin: 5px;
+    color: #333;
+}
+
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #888;
+    border-radius: 8px;
+    background: transparent;
+}
+
+QRadioButton::indicator:checked {
+    background-color: #0078d7;
+    border: 2px solid #0078d7;
+}
+
+/* Label Style */
+QLabel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Scrollbar Style */
+QScrollBar:vertical {
+    background: #f0f0f0;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #ccc;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #bbb;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+/* Footer Layout Buttons */
+QPushButton#increase, QPushButton#decrease {
+    background-color: #eaeaea;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+QPushButton#increase:hover, QPushButton#decrease:hover {
+    background-color: #d9d9d9;
+    border-color: #ccc;
+}
