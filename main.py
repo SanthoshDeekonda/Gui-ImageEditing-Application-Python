@@ -8,6 +8,9 @@ class MainApp(AppCore):
 
 
 if __name__ == "__main__":
+
+    """ Application layout and the functionality is inherited """
+
     app = QApplication([])
     photo_editor = MainApp()
     photo_editor.show()
